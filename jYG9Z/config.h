@@ -8,3 +8,4 @@
 #define TAPPING_TERM_PER_KEY
 #define RGB_MATRIX_STARTUP_SPD 60
 
+#define TAPPING_TOGGLE 1  // Make TT trigger on single tap

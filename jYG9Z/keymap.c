@@ -93,6 +93,8 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return TAPPING_TERM + 100;
         case TD(DANCE_1):
             return TAPPING_TERM + 100;
+        case TD(LAYER_4_DANCE):
+            return TAPPING_TERM + 100;
         default:
             return TAPPING_TERM;
     }

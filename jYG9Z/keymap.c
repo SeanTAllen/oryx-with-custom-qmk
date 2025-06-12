@@ -20,9 +20,9 @@ enum tap_dance_codes {
   LAYER_4_DANCE
 };
 
-#define DUAL_FUNC_0 LT(8, KC_F11)
-#define DUAL_FUNC_1 LT(14, KC_F20)
-#define DUAL_FUNC_2 LT(10, KC_F15)
+#define DUAL_FUNC_0 LT(6, KC_F14)
+#define DUAL_FUNC_1 LT(14, KC_I)
+#define DUAL_FUNC_2 LT(4, KC_F16)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [2] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_NO,          KC_NO,          KC_EXLM,        KC_AT,          KC_HASH,        KC_NO,          KC_TRANSPARENT,                                 KC_TRANSPARENT, ST_MACRO_1,     KC_LCBR,        KC_RCBR,        KC_BSLS,        KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_NO,          KC_NO,          KC_DLR,         KC_PERC,        KC_CIRC,        KC_RPRN,        KC_TRANSPARENT,                                                                 KC_TRANSPARENT, ST_MACRO_2,     KC_LPRN,        KC_RPRN,        KC_PIPE,        KC_SPACE,       KC_TRANSPARENT,
-    KC_NO,          KC_NO,          KC_AMPR,        KC_ASTR,        KC_LPRN,        KC_NO,                                          ST_MACRO_3,     KC_LBRC,        KC_RBRC,        KC_LABK,        KC_RABK,        KC_TRANSPARENT,
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                 KC_TRANSPARENT, ST_MACRO_1,     KC_LCBR,        KC_RCBR,        KC_BSLS,        KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                                                 KC_TRANSPARENT, ST_MACRO_2,     KC_LPRN,        KC_RPRN,        KC_PIPE,        KC_SPACE,       KC_TRANSPARENT, 
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          ST_MACRO_3,     KC_LBRC,        KC_RBRC,        KC_LABK,        KC_RABK,        KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, LALT(LSFT(KC_BSPC)),KC_TRANSPARENT
   ),

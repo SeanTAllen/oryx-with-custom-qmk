@@ -19,15 +19,15 @@ enum tap_dance_codes {
   DANCE_2,
 };
 
-#define DUAL_FUNC_0 LT(6, KC_F14)
-#define DUAL_FUNC_1 LT(14, KC_I)
-#define DUAL_FUNC_2 LT(4, KC_F16)
+#define DUAL_FUNC_0 LT(12, KC_9)
+#define DUAL_FUNC_1 LT(14, KC_P)
+#define DUAL_FUNC_2 LT(14, KC_3)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_GRAVE,       KC_Q,           MT(MOD_LCTL, KC_W),MT(MOD_LALT, KC_R),MT(MOD_LGUI, KC_P),KC_B,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_J,           MT(MOD_RGUI, KC_L),MT(MOD_RALT, KC_I),MT(MOD_RCTL, KC_U),KC_EQUAL,       KC_TRANSPARENT, 
-    KC_AT,          KC_F,           LT(5, KC_A),    LT(2, KC_S),    LT(1, KC_T),    KC_G,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_M,           LT(1, KC_N),    LT(2, KC_E),    LT(3, KC_O),    KC_MINUS,       KC_TRANSPARENT, 
+    KC_AT,          KC_F,           LT(5, KC_A),    LT(2, KC_S),    LT(1, KC_T),    KC_G,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_M,           LT(1, KC_N),    LT(2, KC_E),    KC_O,           KC_MINUS,       KC_TRANSPARENT, 
     DUAL_FUNC_0,    KC_Z,           KC_X,           ALL_T(KC_C),    MEH_T(KC_D),    KC_V,                                           KC_K,           KC_H,           ALL_T(KC_Y),    KC_HASH,        KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, CW_TOGG,        TT(3),          KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, TT(4),          TD(DANCE_2),    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     MT(MOD_LSFT, KC_SPACE),TD(DANCE_0),    TD(DANCE_1),                    KC_TRANSPARENT, DUAL_FUNC_0,    MT(MOD_LSFT, KC_ENTER)
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [2] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                 KC_TRANSPARENT, ST_MACRO_1,     KC_LCBR,        KC_RCBR,        KC_BSLS,        KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                 KC_TRANSPARENT, ST_MACRO_1,     KC_LCBR,        KC_RCBR,        KC_BSLS,        KC_NO,          KC_TRANSPARENT, 
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                                                 KC_TRANSPARENT, ST_MACRO_2,     KC_LPRN,        KC_RPRN,        KC_PIPE,        KC_SPACE,       KC_TRANSPARENT, 
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          ST_MACRO_3,     KC_LBRC,        KC_RBRC,        KC_LABK,        KC_RABK,        KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
